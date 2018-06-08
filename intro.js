@@ -1270,13 +1270,13 @@
         _exitIntro.call(self, self._targetElement);
       };
 
-      buttonsLayer.appendChild(skipTooltipButton);
-
       //in order to prevent displaying next/previous button always
       if (this._introItems.length > 1) {
         buttonsLayer.appendChild(prevTooltipButton);
         buttonsLayer.appendChild(nextTooltipButton);
       }
+
+      buttonsLayer.appendChild(skipTooltipButton);
 
       tooltipLayer.appendChild(buttonsLayer);
 
